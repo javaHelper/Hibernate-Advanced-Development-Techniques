@@ -19,28 +19,23 @@ mysql> show tables;
 
 
 mysql> select * from images;
-+------------+------------+
-| student_id | file_name  |
-+------------+------------+
-|          1 | photo1.jpg |
-|          1 | photo4.jpg |
-|          1 | photo2.jpg |
-|          1 | photo3.jpg |
-|          1 | photo5.jpg |
-|          2 | photo1.jpg |
-|          2 | photo2.jpg |
-|          2 | photo3.jpg |
-+------------+------------+
-8 rows in set (0.01 sec)
++------------+------------+--------------+
+| student_id | file_name  | images_order |
++------------+------------+--------------+
+|          1 | photo1.jpg |            0 |
+|          1 | photo2.jpg |            1 |
+|          1 | photo3.jpg |            2 |
+|          1 | photo4.jpg |            3 |
+|          1 | photo4.jpg |            4 |
++------------+------------+--------------+
+5 rows in set (0.01 sec)
 
 mysql> select * from student;
 +----+-----------------------+------------+-----------+
 | id | email                 | first_name | last_name |
 +----+-----------------------+------------+-----------+
 |  1 | matt.wixson@gmail.com | Matt       | Wixon     |
-|  2 | jane.doe@gmail.com    | Jane       | Doe       |
 +----+-----------------------+------------+-----------+
-2 rows in set (0.00 sec)
-
+1 row in set (0.00 sec)
 mysql>
 ```
